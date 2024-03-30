@@ -1,0 +1,760 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Lobster&family=Madimi+One&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    *{
+        margin: 0px;
+        padding: 0px ;
+        font-family: 'poppins',sans-serif;
+    }
+
+body{
+ background-color: black;
+}
+  :root{
+   --red : rgb(224, 7, 7);;
+  }  
+   .red{
+    background-color: rgb(224, 7, 7);;
+    color: white;
+    
+   }
+   .HForm{
+    
+    
+    width: 350px;
+    height: 10vh;
+
+    display: flex;
+    align-items: center;
+    
+    
+
+    border-radius: 10px;
+   }
+   .HForm form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+background-color: white;
+border-radius: 6px;
+    
+   }
+   .HForm input{
+outline: none;
+border: none;
+height: auto;
+font-size: 15px;
+width: 130px;
+
+   }
+   .HForm span{
+border: 1px solid gray;
+height: 3vh;
+text-align: center;
+width: 2px;
+
+
+   }
+   .HForm button{
+    width: auto;    
+    height: 9vh;
+    
+   }
+   .HForm button:hover{
+  background-color: rgb(214, 0, 0);
+    
+   }
+.carousel-inner{
+    /* border: 2px solid  rgb(255, 0, 0); */
+    background: none;
+}
+
+.navbar{
+  margin-top: 20px;
+
+    background-color: none;
+    position: absolute;
+    z-index: 10;
+
+    color: white;
+}
+
+.nav-link{
+  color: white;
+  margin-right: 20px;
+}
+.nav-link:hover{
+  color: white;
+ 
+}
+
+.d-grid button{
+  padding: 10px 15px;
+}
+
+.navbar-brand{
+  margin-left: 20px;
+}
+   .carousel-inner{
+    /* border: 1px solid red; */
+    height: 90vh;
+    margin-bottom: 40px;
+    
+   }
+   .carousel-inner .fag{   
+
+width: 100%;
+height: 100%;
+
+
+  
+
+   }   
+
+   .fag img{
+    
+    width: 100%;
+    height: 100%;
+    
+    opacity: 0.5;
+   
+   }
+    
+  
+    
+  .fag1{
+    top: 30%;
+    /* background-color: aquamarine; */
+    width: 100%;
+    z-index: 22;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    position: absolute;
+  }
+
+   .text{
+    
+    margin-top: -10%;
+    height: 50%;
+    color: white;
+    top: 70%;
+    width: 85%;
+   }
+
+   .text h1{
+    font-weight: 700;
+    font-size: 50px;
+    margin-bottom: 20px;
+    width: 60%;
+   }
+   .text a{
+    padding: 10px 40px ;
+    background-color: var(--red);
+    color: white;
+    border-radius: 2px;
+    text-decoration: none;
+    font-weight: 500;
+   }
+   
+
+   .col{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    width: auto;
+    
+   }
+   .col .box{
+
+    
+    width: 6%;
+    height: 10vh;
+    
+    border-radius: 20px ;
+    margin-bottom: 10px;
+    background-color: rgb(255, 255, 255);
+    animation-name: xt;
+    
+ 
+   }
+
+
+   
+
+   .col .p{
+    /* border: 1px solid red; */
+    color: white;
+    margin-top: 20px;
+    font-size: 2px;
+   }
+
+   section.two{
+    height: auto;
+    padding: 10px 20px;
+    margin-bottom: 50px;
+    /* border: 1px solid red; */
+
+   }
+   section.two h1{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 20px;
+   }
+   section.two a {
+text-decoration: none;
+
+   }
+   section.two a h6{
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-decoration: none;
+   }
+
+   section.two .boxes{
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+
+     flex-wrap: wrap;
+     
+    }
+    section.two .boxes .card{
+     width: 45%;
+     margin-bottom: 40px;
+    }
+
+    section.brave{
+    
+
+      height: auto;
+      margin-bottom: 30px;
+      
+    }
+    section.brave h1{
+      text-align: center;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 40px;
+    text-decoration: none;
+    
+    }
+
+    .haven{
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      padding: 0px 20px;
+    }
+    .have{
+      border: 1px solid rgb(255, 255, 255);
+      width:24%;
+      height: 30vh;
+      
+      margin-bottom: 20px;
+      border-radius: 4px;
+
+      text-align: center;
+      color: white;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      cursor: pointer;
+    }
+    .have i{
+      font-size: 60px;
+      margin-bottom: 20px;
+    }
+
+.footer{
+  
+  background-color: rgba(240, 248, 255, 0.596);
+  height: max-content;
+}
+
+    .foot{
+      /* border: 2px solid red; */
+      
+      
+     display: flex;
+     align-items: start;
+     justify-content: space-around;
+     padding: 80px 10px;
+     height: 80vh;
+    }
+    .foot h5{
+     
+    font-size: 17px;
+    }
+    .footer p{
+      color: rgb(0, 0, 0);
+      text-align: center;
+      padding-bottom: 20px;
+    }
+    .foot a{
+      text-decoration: none;
+      color: rgba(255, 255, 255, 0.849);
+      margin-left: 5px;
+    }
+    @media only screen and (min-width:600px) and (max-width: 999px) {
+    
+      nav{
+        
+        width: 100%;
+      }
+
+      .text h1{
+    
+    font-size: 40px;
+    width: 80%;
+      }
+      .footer a{
+        font-size: 13px;
+      }
+    }
+    @media only screen and (max-width:500px) {
+      
+      .navbar{
+        
+width: 100%;
+
+      }
+      .HForm{
+    
+    /* border: 1px solid  black  ; */
+    width: 180px;
+      }
+      .HForm form{
+        width: 100%;
+      }
+      .HForm input{
+
+font-size: 10px;
+width: 60px;}
+.container-fluid img{
+width: 70%;
+}
+.text h1{
+  font-size: 30px;
+  width: 80%;
+}
+.col .box{
+
+    
+width: 8%;}
+
+
+.fag img{
+    
+    width: 100%;
+    height: 100%;
+  
+  }
+  section.two .boxes{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+
+     /* border: 1px solid black; */
+     
+    }
+    section.two .boxes .card{
+     width: 100%;
+     margin-bottom: 40px;
+    }
+
+    .haven{
+display: flex;
+align-items: center;
+justify-content: center;
+
+flex-direction: column;
+
+padding: 0px 20px;
+
+}
+.have{
+  width:50%;
+      height: 30vh;
+}
+.footer{
+  
+  background-color: rgba(240, 248, 255, 0.596);
+  height: max-content;
+}
+.foot{
+      /* border: 2px solid red; */
+      
+      
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     padding: 80px 10px;
+     height: auto;
+     text-align: center;
+    }
+   
+    .foot h5{
+     
+     font-size: 17px;
+     margin: 20px 0px;
+     }
+     .footer p{
+     font-size: 16px;
+    }
+    }
+</style>
+  <body>
+
+    <nav class="navbar  navbar-expand-lg ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="https://s3-media0.fl.yelpcdn.com/assets/srv0/yelp_design_cdn/2d2a7a4342fc/assets/img/brand/logo_desktop_white.svg" alt="logo"></a>
+        <div class="HForm">
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="things to do," aria-label="Search"> 
+          <span></span>
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn red" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+      </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">                                  
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Yelp for Business
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="#">Write a Review</a>
+            </li> 
+          </ul>                 
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <button  type="button" class="btn btn-outline-light">Log in</button>
+            <button class="btn red" type="button">Sign in</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+   <section>    
+        
+        <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="carousel">           
+  <div class="carousel-inner">
+   
+    <div class="carousel-item active fag">
+<div class="fag1">
+   <div class="col">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>    
+   </div>
+
+   <div class="text">
+      
+    <h1>Leave it to the pros </h1>
+    <a href="#">Handy man</a>
+  </div>
+</div>
+     
+      <img src="https://s3-media0.fl.yelpcdn.com/educatorphoto/8bWLkgjY8XNWnBwIGjHr6A/o.jpg" class="d-block w-100" alt="swiper-images">
+    </div>
+    <div class="carousel-item fag">
+      <div class="fag1">
+        <div class="col">
+         <div class="box"></div>
+         <div class="box"></div>
+         <div class="box"></div>
+         <div class="box"></div>    
+        </div>
+     
+        <div class="text">
+           
+         <h1>
+          Get a deep clean
+          </h1>
+         <a href="#">Cleaners</a>
+       </div>
+     </div>
+      <img src="https://s3-media0.fl.yelpcdn.com/educatorphoto/C4O5eA3mjw5u5eY9xSw7BA/o.jpg" class="d-block w-100" alt="swiper-images">
+    </div>
+    <div class="carousel-item fag">
+      <div class="fag1">
+        <div class="col">
+         <div class="box"></div>
+         <div class="box"></div>
+         <div class="box"></div>
+         <div class="box"></div>    
+        </div>
+     
+        <div class="text">
+           
+         <h1>
+          Keep your car feeling fresh
+          </h1>
+         <a href="#">Auto detailing</a>
+       </div>
+     </div>
+      <img src="https://s3-media0.fl.yelpcdn.com/educatorphoto/k0oFer3y9EnL-Id0DONTQg/o.jpg" class="d-block w-100" alt="swiper-images">
+    </div>
+    <div class="carousel-item fag">
+      <div class="fag1">
+        <div class="col">
+         <div class="box"></div>
+         <div class="box"></div>
+         <div class="box"></div>
+         <div class="box"></div>    
+        </div>
+     
+        <div class="text">
+           
+         <h1>
+          Get a deep clean
+          2024 Top 100 Seafood Spots
+          </h1>
+         <a href="#">See list</a>
+       </div>
+     </div>
+      <img src="https://s3-media0.fl.yelpcdn.com/educatorphoto/fICNVd5Cp16INxJ05NQFsA/o.jpg" class="d-block w-100" alt="swiper-images">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</section>  
+   <section class="two">
+    <h1>Recent Activity</h1>
+    <div class="boxes">
+      
+      <div class="card">        
+        <div class="card-body">
+          <h5 class="card-title"><img src="https://s3-media0.fl.yelpcdn.com/photo/MLwgeUcUunm0DGgz-1-K8w/ls.jpg" alt="" style="width: 10%; border-radius: 200px; margin-right: 20px;">Kate M.</h5>
+          <p class="card-text">
+            light Pranakhon <br> I have been hearing about Pranakhon</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><i class="fa-solid fa-heart" style="margin-right: 10px;"></i><i class="fa-solid fa-heart" style="margin-right: 10px;"></i><i class="fa-solid fa-heart"></i></li>
+          <img src="https://s3-media0.fl.yelpcdn.com/bphoto/XB_CUHqiAMsBLrm7WSdSPQ/l.jpg" class="card-img-top" alt="...">
+          
+        </ul>
+        <div class="card-body">
+          <i class="fa-regular fa-thumbs-up" style="font-size: 30px; margin-right: 20px;"></i>          
+          <i class="fa-regular fa-star"  style="font-size: 30px;"></i>
+        </div>
+      </div>
+      <div class="card">        
+        <div class="card-body">
+          <h5 class="card-title"><img src="https://s3-media0.fl.yelpcdn.com/photo/4ZZMUuVtTFxoWpljiN_s2Q/ls.jpg" alt="" style="width: 10%; border-radius: 200px; margin-right: 20px;">Elizabeth C.</h5>
+          <p class="card-text">Machi Machi <br> make up the bulk of the card's content.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><i class="fa-solid fa-heart" style="margin-right: 10px;"></i><i class="fa-solid fa-heart" style="margin-right: 10px;"></i><i class="fa-regular fa-heart"></i></li>
+          <img src="https://s3-media0.fl.yelpcdn.com/bphoto/7JH0lrjGQsSdoWNRQJGoKQ/l.jpg" class="card-img-top" alt="...">
+          
+        </ul>
+        <div class="card-body">
+          <i class="fa-solid fa-thumbs-up" style="font-size: 30px; margin-right: 20px;"></i>          
+          <i class="fa-regular fa-star"  style="font-size: 30px;"></i>
+        </div>
+      </div>
+      <div class="card">        
+        <div class="card-body">
+          <h5 class="card-title"><img src="https://s3-media0.fl.yelpcdn.com/photo/GFxLeAyZqI1nCSHJi_vLnQ/60s.jpg" alt="" style="width: 10%; border-radius: 200px; margin-right: 20px;">Shweta L.</h5>
+          <p class="card-text">Turkuaz Restaurant<br>Food is quite overpriced and portions</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><i class="fa-solid fa-heart" style="margin-right: 10px;"></i><i class="fa-solid fa-heart" style="margin-right: 10px;"></i><i class="fa-solid fa-heart" style="margin-right: 10px;"></i>
+          <img src="https://s3-media0.fl.yelpcdn.com/bphoto/9fArCTiK4qI5-8Mc_5i51w/l.jpg" class="card-img-top" alt="...">
+          
+        </ul>
+        <div class="card-body">
+          <i class="fa-solid fa-thumbs-up" style="font-size: 30px; margin-right: 20px;"></i>          
+          <i class="fa-regular fa-star"  style="font-size: 30px;"></i>
+        </div>
+      </div>
+      <div class="card">        
+        <div class="card-body">
+          <h5 class="card-title"><img src="https://s3-media0.fl.yelpcdn.com/photo/Go7pJS7IPot3V1zyUHd2uw/60s.jpg" alt="" style="width: 10%; border-radius: 200px; margin-right: 20px;">David</h5>
+          <p class="card-text">Da Gennaro<br>Italian, Pizza, Gluten-Free</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><i class="fa-solid fa-heart" style="margin-right: 10px;"></i><i class="fa-solid fa-heart" style="margin-right: 10px;"></i><i class="fa-regular fa-heart"></i></li>
+          <img src="https://s3-media0.fl.yelpcdn.com/bphoto/j-zLEA3Vfp-zvSRNofonRA/258s.jpg" class="card-img-top" alt="...">
+          
+        </ul>
+        <div class="card-body">
+          <i class="fa-solid fa-thumbs-up" style="font-size: 30px; margin-right: 20px;"></i>          
+          <i class="fa-regular fa-star"  style="font-size: 30px;"></i>
+        </div>
+      </div>
+      <div class="card">        
+        <div class="card-body">
+          <h5 class="card-title"><img src="https://s3-media0.fl.yelpcdn.com/photo/r9hInk1lp8M15urcXzFKbg/60s.jpg" alt="" style="width: 10%; border-radius: 200px; margin-right: 20px;">Megan P.</h5>
+          <p class="card-text">Havy pop<br> Bagels, Pop-up Shops</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><i class="fa-solid fa-heart" style="margin-right: 10px;"></i><i class="fa-solid fa-heart" style="margin-right: 10px;"></i><i class="fa-regular fa-heart"></i></li>
+          <img src="https://s3-media0.fl.yelpcdn.com/bphoto/ptav68YPbS7ER7tjh98Hbg/l.jpg" class="card-img-top" alt="...">
+          
+        </ul>
+        <div class="card-body">
+          <i class="fa-solid fa-thumbs-up" style="font-size: 30px; margin-right: 20px;"></i>          
+          <i class="fa-regular fa-star"  style="font-size: 30px;"></i>
+        </div>
+      </div>
+      <div class="card">        
+        <div class="card-body">
+          <h5 class="card-title"><img src="https://s3-media0.fl.yelpcdn.com/photo/hQQ0-q8vPIG7ZIhgaA6Z6A/60s.jpg" alt="" style="width: 10%; border-radius: 200px; margin-right: 20px;">Tram N.</h5>
+          <p class="card-text">Yami !<br>Reservations needed at least that's my personal opinion</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><i class="fa-solid fa-heart" style="margin-right: 10px;"></i><i class="fa-solid fa-heart" style="margin-right: 10px;"></i><i class="fa-regular fa-heart"></i></li>
+          <img src="https://s3-media0.fl.yelpcdn.com/bphoto/Z1ugGF9xFFF6Kjq-h7WQjw/l.jpg" class="card-img-top" alt="...">
+          
+        </ul>
+        <div class="card-body">
+          <i class="fa-solid fa-thumbs-up" style="font-size: 30px; margin-right: 20px;"></i>          
+          <i class="fa-regular fa-star"  style="font-size: 30px;"></i>
+        </div>
+      </div>
+    </div>
+    <a href="#"><h6> <i class="fa-solid fa-angle-down" style="margin-right: 10px;"></i>Show more activity</h6></a>
+   </section>
+   <section class="brave">
+    <h1>Categories</h1>
+    <div class="haven">
+     <div class=" have hav1">
+      <i class="fa-solid fa-utensils"></i> 
+      <h4>Restaurants</h4>
+     </div>
+
+      <div class=" have hav2">
+        <i class="fa-solid fa-gift"></i>
+        <h4>Shopping</h4>
+      </div>
+
+      <div class=" have hav3">
+        <i class="fa-solid fa-hanukiah"></i>
+        <h4>Nightlife</h4>
+      </div>
+
+      <div class=" have hav4">
+        <i class="fa-solid fa-carrot"></i>
+        <h4>Active Life</h4>
+      </div>
+
+      <div class=" have hav5">
+        <i class="fa-solid fa-seedling"></i>
+        <h4>
+          Beauty & Spas</h4>
+      </div>
+
+      <div class=" have hav6">
+        <i class="fa-solid fa-car"></i>
+        <h4>
+
+          Automotive</h4>
+      </div>
+
+      <div class=" have hav7">
+        <i class="fa-solid fa-house-chimney"></i>
+        <h4>Home Services</h4>
+      </div>
+
+      <div class=" have hav8">
+        <i class="fa-solid fa-ellipsis"></i>
+        <h4>more</h4>
+      </div>
+
+    </div>
+   </section>
+
+
+   <section class="footer">
+    <div class="foot">
+      <div class="div1">
+      <h5>About</h5>
+      <a href="#">Careers</a><br>
+      <a href="#">Press</a><br>
+      <a href="#">Trust & Safety</a><br>
+      <a href="#">Content Guidelines</a><br>
+      <a href="#">Accessibility Statement</a><br>
+      <a href="#">Terms of Service</a><br>
+      <a href="#">Privacy Policy</a><br>
+      <a href="#">Ad Choices</a><br>
+      <a href="#">Your Privacy Choices</a><br>
+    </div>
+<div class="div2">  
+  <h5>Discover</h5>
+  <a href="#">Yelp Project Cost Guides</a><br>
+  <a href="#">Collections</a><br>
+  <a href="#">Events</a><br>
+  <a href="#">Yelp Blog</a><br>
+  <a href="#">Support</a><br>
+  <a href="#">Yelp Mobile</a><br>
+  <a href="#">Developers</a><br>
+  <a href="#">RSS</a><br>    
+</div>
+<div class="div3">  
+  <h5>Yelp for Business</h5>
+  <a href="#">Yelp for Business</a><br>
+  <a href="#">Business Owner Login</a><br>
+  <a href="#">Claim your Business Page</a><br>
+  <a href="#">Advertise on Yelp</a><br>
+  <a href="#">Yelp for Restaurant Owners</a><br>
+  <a href="#">Business Success Stories</a><br>
+  <a href="#">Business Support</a><br>
+  <a href="#">Yelp Blog for Business</a><br>    
+</div>
+<div class="div4">
+  <h5>Language</h5>
+  <a href="#">English</a>
+  <h5>Cities</h5>
+  <a href="#">Explore a city</a>
+</div>
+    </div>
+    <p>Copyright © 2004–2024 Yelp Inc. Yelp, Yelp logo, Yelp burst and related marks are registered trademarks of Yelp.</p>
+   </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
